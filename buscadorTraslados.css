@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    height: auto;
+    background-color: brown;  /* Modificar el color de fondo */
+    width: 30%;
+    margin: 60px auto;
+    border-radius: 10px;
+    padding: 60px 0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+    margin-bottom: 10px;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+
+ /* RESULTADOS */
+
+.muestra-resultados{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.contenedor-resultados{
+    margin: 0 auto;
+    width: 60%;
+    
+}
+
+/* Resultados de destino */
+
+.tabla-resultados-destino{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 18px;
+}
+
+.tabla-resultados-destino p{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    width: 180px;
+    height: 120px;
+    font-size: 16px;
+    text-align: center;
+    background-color: darkgray;
+}
+
+.tabla-resultados-destino p:last-of-type{
+    border:none;
+}
+
